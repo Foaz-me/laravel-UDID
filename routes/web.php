@@ -18,6 +18,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/get','UdidController@get')-name('get');
-Route::get('/udid','UdidController@index')-name('index');
+Route::get('/get','UdidController@get')->name('get');
+Route::get('/udid','UdidController@index')->name('index');
 Route::get('/callback', 'UdidController@callback')->name('callback');
